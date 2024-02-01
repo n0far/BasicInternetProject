@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/script.js"></script>
+    <title>Spiderman</title>
+</head>
+<body>
+<div class="card">
+
+    <div class="">
+        <h2><b>Spider-Man</b></h2>
+        <p>CRIME-FIGHTER</p>
+        <img src="https://cdn.vox-cdn.com/thumbor/SvdIY2ua7USRE0QPHJNQ7hhg2ws=/0x0:2050x1080/1200x800/filters:focal(861x376:1189x704)/cdn.vox-cdn.com/uploads/chorus_image/image/69995240/spider_man_far_from_home_peter_parker_1562394390.0.jpg" alt="spider_man_far_from_home_peter_parker_1562394390" >
+
+    </div>
+    <div class="information">
+        <div class="about selected" id="about">
+            <h4 style="text-align: left;"><b>ABOUT</b></h4>
+            <p style="text-align: left;" id="about-text" contenteditable="false" class="active"></p>
+            <div class="socials">
+                <a href="https://www.facebook.com/SpiderManMovie/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/SpiderMan" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/company/marvel-studios" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/spiderman/" target="_blank" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <div class="skills" id="skills">
+            <h4 style="text-align: left;"><b>SKILLS</b></h4>
+            <p id="skills-text" style="text-align: left" contenteditable="false"></p>
+
+        </div>
+
+        <div class="contact" id="contact">
+            <h4 style="text-align: left;"><b>CONTACT</b></h4>
+            <p id="contact-text" style="text-align: left"></p>
+
+        </div>
+
+        <div class="experience" id="experience">
+            <h4 style="text-align: left;"><b>EXPERIENCE</b></h4>
+            <p id="experience-text" style="text-align: left" contenteditable="false"></p>
+
+        </div>
+    </div>
+    <div class="nav">
+        <button class="item" onclick="selector('about')">About</button>
+        <button class="item" onclick="selector('skills')">Skills</button>
+        <button class="item" onclick="selector('contact')">Contact</button>
+        <button class="item" onclick="selector('experience')">Experience</button>
+    </div>
+</div>
+<button class="edit" onclick="edit()"> <i class="fa fa-edit"></i></button>
+
+</body>
+</html>
